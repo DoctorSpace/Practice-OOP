@@ -1,0 +1,12 @@
+.place-name-table{
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 64px;
+
+    background-color:  var(--color1);
+}
+

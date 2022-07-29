@@ -1,0 +1,73 @@
+.settingBtn{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.settingBtn input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.settingBtn label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    margin-left: 3px;
+
+    border: 2px solid var(--color4);
+    border-radius: 4px;
+}
+
+.settingBtn label:hover{
+
+    border: 2px solid var(--color1);
+}
+
+
+
+.Btn1{
+    background-image: url(../../../images/settingsBtn/off/icon-add-pople-off.svg);
+}
+
+.Btn2{
+    background-image: url(../../../images/settingsBtn/off/icon-del-pople-off.svg);
+}
+
+.Btn3{
+    background-image: url(../../../images/settingsBtn/off/icon-add-bus-off.svg);
+}
+
+.Btn4{
+    background-image: url(../../../images/settingsBtn/off/icon-del-bus-off.svg);
+}
+.Btn5{
+    background-image: url(../../../images/settingsBtn/off/icon-db-off.svg);
+}
+
+
+
+.Btn1:hover{
+    background-image: url(../../../images/settingsBtn/on/icon-add-pople-on.svg);
+}
+
+.Btn2:hover{
+    background-image: url(../../../images/settingsBtn/on/icon-del-pople-on.svg);
+}
+
+.Btn3:hover{
+    background-image: url(../../../images/settingsBtn/on/icon-add-bus-on.svg);
+}
+
+.Btn4:hover{
+    background-image: url(../../../images/settingsBtn/on/icon-del-bus-on.svg);
+}
+.Btn5:hover{
+    background-image: url(../../../images/settingsBtn/on/icon-db-on.svg);
+}
+
