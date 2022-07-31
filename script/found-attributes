@@ -1,0 +1,30 @@
+//// Радио кнопки и их поля
+
+
+// Поля настроек
+const addUserField  = document.querySelector('#addUserField')
+const dellUserField = document.querySelector('#dellUserField')
+const addBusField   = document.querySelector('#addBusField')
+const dellBusField  = document.querySelector('#dellBusField')
+const dbField       = document.querySelector('#dbField')
+// Radio кнопки
+const Btn1  = document.querySelector('#Btn1')
+const Btn2  = document.querySelector('#Btn2')
+const Btn3  = document.querySelector('#Btn3')
+const Btn4  = document.querySelector('#Btn4')
+const Btn5  = document.querySelector('#Btn5')
+
+
+//// Поля для добавления персонала
+
+// Поля ввода
+const addUser__name     = document.querySelector('#addUser__name')
+const addUser__carNum   = document.querySelector('#addUser__carNum')
+const addUser__routeNum = document.querySelector('#addUser__routeNum')
+// Кнопка добавления
+const btn__addUser = document.querySelector('#btn__addUser')
+
+
+
+//// Поле Таблицы "В парке"
+const table_in_park  = document.querySelector('#table_in_park')

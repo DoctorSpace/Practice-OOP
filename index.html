@@ -10,7 +10,7 @@
     <div class="root">
         <header class="header">
             <div>
-                <img src="../images/bus.png" alt="bus">
+                <img src="./images/bus.png" alt="bus">
                 <h2>Сервис Автопарка</h2>
             </div>
         </header>
@@ -21,52 +21,88 @@
             <div id="d1" class="conteiner__settings">
                 <div class="menu"><h1>Меню</h1></div>
 
+                <!-- Радио Кнопки -->
                 <div class="settingBtn">
-                    <input id="Btn1" name="radioBtn" type="radio">
-                    <label class="Btn1" for="Btn1"></label>
+
+                    <input id="Btn1" name="radioBtn" type="radio" checked>
+                    <label class="FakeBtn-1" for="Btn1"></label>
 
                     <input id="Btn2" name="radioBtn" type="radio">
-                    <label class="Btn2" for="Btn2"></label>
+                    <label class="FakeBtn-2" for="Btn2"></label>
 
                     <input id="Btn3" name="radioBtn" type="radio">
-                    <label class="Btn3" for="Btn3"></label>
+                    <label class="FakeBtn-3" for="Btn3"></label>
 
                     <input id="Btn4" name="radioBtn" type="radio">
-                    <label class="Btn4" for="Btn4"></label>
+                    <label class="FakeBtn-4" for="Btn4"></label>
 
                     <input id="Btn5" name="radioBtn" type="radio">
-                    <label class="Btn5" for="Btn5"></label>
+                    <label class="FakeBtn-5" for="Btn5"></label>
                 </div>
 
+                <!-- Внутренние настройки -->
+                <div class="settings">
 
-
-                <!-- <div class="settingBtn"> -->
-                    <!-- <div id="BtnAddPeople"><img src="../images/settingsBtn/on/icon-add-pople-on.png" alt="addPeople"></div> -->
-                    <!-- <div id="BtnDelPeople"><img src="../images/settingsBtn/on/icon-del-pople-on.png" alt="delPeople"></div> -->
-                    <!-- <div id="BtnAddBus"><img src="../images/settingsBtn/on/icon-add-bus-on.png" alt="addBus"></div> -->
-                    <!-- <div id="BtnDelBus"><img src="../images/settingsBtn/on/icon-del-bus-on.png" alt="delBus"></div> -->
-                    <!-- <div id="BtnDb"><img src="../images/settingsBtn/on/icon-db-on.png" alt="db"></div> -->
-                <!-- </div> -->
-
-                <div class="settings"></div>
+                    <div id="addUserField" class="field">
+                        <h2>Добавление персонала</h2>
+                        <div>
+                            <p>Имя</p>
+                            <input id="addUser__name" type="text">
+                        </div>
+                        <div>
+                            <p>Номер машины</p>
+                            <input id="addUser__carNum" type="text">
+                        </div>
+                        <div>
+                            <p>Номер маршрута</p>
+                            <input id="addUser__routeNum" type="text">
+                        </div>
+                        <button id="btn__addUser">Добавить персонал</button>
+                    </div>
+                <!--  -->
+                    <div id="dellUserField" class="field  hide">
+                        <h2>Удаление персонала</h2>
+                        <div>
+                            <p>Имя</p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <p>Номер машины</p>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <p>Номер маршрута</p>
+                            <input type="text">
+                        </div>
+                        <button>Удалить персонал</button>
+                    </div>
+                <!--  -->
+                    <div id="addBusField" class="field hide">
+                        <h2>Въезд в парк</h2>
+                        <div>
+                            <p>Номер машины</p>
+                            <input type="text">
+                        </div>
+                        <button>Применить</button>
+                    </div>
+                <!--  -->
+                    <div id="dellBusField" class="field  hide">
+                        <h2>Выезд из парка</h2>
+                        <div>
+                            <p>Номер машины</p>
+                            <input type="text">
+                        </div>
+                        <button>Применить</button>
+                    </div>
+                <!--  -->
+                    <div id="dbField" class="field hide">
+                        <h2>Выезд из парка</h2>
+                        <input type="file">
+                        <button>Применить</button>
+                    </div>
+                </div>
             </div>
 
-
-
-            <!-- Блок: Меню настроек -->
-            <!-- <div id="d1" class="conteiner__settings"> -->
-                <!-- <div class="menu"><h1>Меню</h1></div> -->
-            <!--  -->
-        <!--  -->
-                <!-- <div class="settingBtn"> -->
-                    <!-- <div id="BtnAddPeople"><img src="../images/settingsBtn/on/icon-add-pople-on.png" alt="addPeople"></div> -->
-                    <!-- <div id="BtnDelPeople"><img src="../images/settingsBtn/on/icon-del-pople-on.png" alt="delPeople"></div> -->
-                    <!-- <div id="BtnAddBus"><img src="../images/settingsBtn/on/icon-add-bus-on.png" alt="addBus"></div> -->
-                    <!-- <div id="BtnDelBus"><img src="../images/settingsBtn/on/icon-del-bus-on.png" alt="delBus"></div> -->
-                    <!-- <div id="BtnDb"><img src="../images/settingsBtn/on/icon-db-on.png" alt="db"></div> -->
-                <!-- </div> -->
-                <!-- <div class="settings"></div> -->
-            <!-- </div> -->
 
             <!-- Блок: Таблица в парке -->
             <div id="d2" class="conteiner__table">
@@ -80,13 +116,8 @@
                     <h3>маршрут</h3>
                 </div>
 
-                <!-- Настраиваимый блок -->
-                <div class="info info-data">
-                    <h3>номер</h3>
-                    <h3>маршрут</h3>
-                </div>
-
-                <!--  -->
+                <!-- Таблица в парке -->
+                <div id="table_in_park"></div>
             </div>
                 
             <!-- Блок: Таблица в пути -->
@@ -112,5 +143,10 @@
             </div>
         </div>
     </div>
+
+
+    <script src="./script/found-attributes.js"></script>
+    <script src="./script/hide-button.js"></script>
+    <script src="./script/add-user.js"></script>
 </body>
 </html>

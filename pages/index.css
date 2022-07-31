@@ -15,6 +15,10 @@
 @import url(../blocks/conteiner/settings/menu.css);
 @import url(../blocks/conteiner/settings/settingBtn.css);
 @import url(../blocks/conteiner/settings/settings.css);
+/* Field */
+@import url(../blocks/conteiner/settings/settingsField/hide.css);
+@import url(../blocks/conteiner/settings/settingsField/field.css);
+
 /* Table */
 @import url(../blocks/conteiner/table/conteiner__table.css);
 @import url(../blocks/conteiner/table/place-name-table.css);
